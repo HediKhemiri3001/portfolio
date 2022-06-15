@@ -15,6 +15,7 @@ import Layout from "../components/layouts/article";
 import Paragraph from "../components/paragraph";
 import Section from "../components/section";
 import styles from "../styles/Home.module.css";
+import Emoji from "../components/emoji";
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
 });
@@ -33,7 +34,7 @@ export default function Home() {
           css={{ backdropFilter: "blur(10px)" }}
         >
           Hello, I&apos;m an engineering student and avid developer based in
-          Tunisia 🇹🇳 !
+          Tunisia <Emoji symbol="🇹🇳" label="tunisian flag" /> !
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
@@ -99,8 +100,9 @@ export default function Home() {
             Education
           </Heading>
           <BioSection>
-            <BioYear>2001</BioYear>Born in Alaine, Abu Dhabi 🇦🇪. Raised and
-            educated in Tunis, Tunisia 🇹🇳.
+            <BioYear>2001</BioYear>Born in Alaine, Abu Dhabi{" "}
+            <Emoji symbol="🇦🇪" label="uae flag" />. Raised and educated in
+            Tunis, Tunisia <Emoji symbol="🇹🇳" label="tunisian flag" />.
           </BioSection>
           <BioSection>
             <BioYear>2019</BioYear>

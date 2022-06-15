@@ -9,6 +9,7 @@ const Main = ({ children, router }) => {
     <Box as="main" pb={8}>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta charset="UTF-8"></meta>
         <meta name="description" content="Khemiri Mohamed Hedi's homepage" />
         <meta name="author" content="Khemiri Mohamed Hedi" />
         <meta name="author" content="Khemiri Mohamed Hedi" />
