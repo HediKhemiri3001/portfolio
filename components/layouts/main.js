@@ -18,11 +18,11 @@ const Main = ({ children, router }) => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@hedi.khe" />
         <meta name="twitter:creator" content="@hedi.khe" />
-        <meta name="twitter:image" content="https://www.craftz.dog/card.png" />
+        <meta name="twitter:image" content="/avatar.png" />
         <meta property="og:site_name" content="Khemiri Mohamed Hedi" />
         <meta name="og:title" content="Khemiri Mohamed Hedi" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="https://www.craftz.dog/card.png" />
+        <meta property="og:image" content="/avatar.png" />
         <title>Khemiri Mohamed Hedi - Homepage</title>
       </Head>
 
