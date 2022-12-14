@@ -52,8 +52,9 @@ export default function Projects() {
       </Section>
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         {PROJECTS.map((project) => (
-          <Section delay={0.1}>
+          <Section delay={0.1} key={project.id}>
             <WorkGridItem
+              key={project.id}
               id={project.id}
               title={project.name}
               thumbnail={project.thumbnail}
