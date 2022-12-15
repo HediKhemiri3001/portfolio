@@ -41,7 +41,7 @@ export default function Home() {
             <Heading as="h2" variant="page-title">
               Mohamed Hedi Khemiri
             </Heading>
-            <p>Technology Enthousiast , Developer 👨‍💻.</p>
+            <p>Technology Enthusiast , Developer 👨‍💻.</p>
           </Box>
           <Box
             flexShrink={0}
