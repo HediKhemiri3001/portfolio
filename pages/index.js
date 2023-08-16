@@ -5,17 +5,19 @@ import {
   Heading,
   chakra,
   Button,
+  Divider,
+  Center,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from "@chakra-ui/icons";
 import NextLink from "next/link";
 import Head from "next/head";
 import Image from "next/image";
-import { BioSection, BioYear } from "../components/bio";
+import { BioSection, BioYear, ButtonsSection } from "../components/bio";
 import Layout from "../components/layouts/article";
 import Paragraph from "../components/paragraph";
 import Section from "../components/section";
-import styles from "../styles/Home.module.css";
 import Emoji from "../components/emoji";
+import { TechList } from "../components/tech-list";
 const ProfileImage = chakra(Image, {
   shouldForwardProp: (prop) => ["width", "height", "src", "alt"].includes(prop),
 });
@@ -33,15 +35,18 @@ export default function Home() {
           bg={useColorModeValue("whiteAlpha.500", "whiteAlpha.200")}
           css={{ backdropFilter: "blur(10px)" }}
         >
-          Hello, I&apos;m an engineering student and avid developer based in
-          Tunisia <Emoji symbol="🇹🇳" label="tunisian flag" /> !
+          Hello, I&apos;m an engineering student and avid technology enthusiast
+          based in Tunisia <Emoji symbol="🇹🇳" label="tunisian flag" /> !
         </Box>
         <Box display={{ md: "flex" }}>
           <Box flexGrow={1}>
             <Heading as="h2" variant="page-title">
               Mohamed Hedi Khemiri
             </Heading>
-            <p>Technology Enthusiast , Developer 👨‍💻.</p>
+            <p>
+              Technology Enthusiast , Devops, Cloud and Full Stack Development
+              👨‍💻.
+            </p>
           </Box>
           <Box
             flexShrink={0}
@@ -76,10 +81,10 @@ export default function Home() {
           <Paragraph>
             Khemiri Mohamed Hedi is a young engineering student at the National
             Institute of Applied Sciences and Technology, better known as INSAT.
-            Motivated and passionate about technology, he builds cool stuff and
-            hopes to do so for a living.
+            Motivated and passionate about technology, He seeks new challenges
+            every day ! <br /> Current challenge: <b>Mastering K8s.</b>
           </Paragraph>
-          <Box align="center" my={4}>
+          <Box flexDirection={"row"} align="center" my={4}>
             <NextLink href="/projects" passHref scroll={false}>
               <Button
                 rightIcon={<ChevronRightIcon />}
@@ -96,6 +101,13 @@ export default function Home() {
           </Box>
         </Section>
         <Section delay={0.2}>
+          <Heading as="h3" variant="section-title">
+            Technologies
+          </Heading>
+
+          <TechList />
+        </Section>
+        <Section delay={0.3}>
           <Heading as="h3" variant="section-title">
             Education
           </Heading>

@@ -26,6 +26,12 @@ const components = {
         marginTop: 3,
         marginBottom: 4,
       },
+      "column-title": {
+        textDecoration: "none",
+        fontSize: 20,
+        marginTop: 3,
+        marginBottom: 4,
+      },
     },
   },
   Link: {
